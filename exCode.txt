@@ -1,0 +1,87 @@
+
+    //Legacy
+    /*
+    public Transform BuildTriangle(Material material = null, float sideLength = 1f, string name = "New Game Object")
+    {
+        float cos30 = 0.866025f;
+
+        if (!material) material = defaultMaterial;
+
+        GameObject newTriangle = new GameObject(name);
+
+        MeshRenderer meshRenderer = newTriangle.AddComponent<MeshRenderer>();
+        MeshFilter meshFilter = newTriangle.AddComponent<MeshFilter>();
+
+        Mesh mesh = new Mesh();
+        mesh.name = name;
+
+        Vector3[] vert = new Vector3[] {
+        new Vector3(0, 0, 0),
+        new Vector3(1, 0, 0) * sideLength,
+        new Vector3(0.5f, 0, cos30) * sideLength};
+
+        int[] tri = new int[] { 0, 2, 1 };
+
+        Vector2[] uv = new Vector2[]{
+        new Vector2(0, 0),
+        new Vector2(1, 0),
+        new Vector2(0.5f, Mathf.Cos(30))};
+
+        mesh.vertices = vert;
+        mesh.triangles = tri;
+        mesh.uv = uv;
+
+        meshRenderer.material = material;
+        meshFilter.mesh = mesh;
+
+        return newTriangle.transform;
+    }
+
+    public Transform BuildCircle(Material material = null, float radius = 1f, string name = "New Game Object")
+    {
+        float cos45 = 0.707106f;
+
+        if (!material) material = defaultMaterial;
+
+        GameObject newCircle = new GameObject(name);
+
+        MeshRenderer meshRenderer = newCircle.AddComponent<MeshRenderer>();
+        MeshFilter meshFilter = newCircle.AddComponent<MeshFilter>();
+
+        Mesh mesh = new Mesh();
+        mesh.name = name;
+
+        Vector3[] vert = new Vector3[] {
+        Vector3.zero,
+        new Vector3(-1, 0, 0) * radius,
+        new Vector3(-cos45, 0, cos45) * radius,
+        new Vector3(0, 0, 1) * radius,
+        new Vector3(cos45, 0, cos45) * radius,
+        new Vector3(1, 0, 0) * radius,
+        new Vector3(cos45, 0, -cos45) * radius,
+        new Vector3(0, 0, -1) * radius,
+        new Vector3(-cos45, 0, -cos45) * radius};
+
+        int[] tri = new int[] { 0, 1, 2, 0, 2, 3, 0, 3, 4, 0, 4, 5, 0, 5, 6, 0, 6, 7, 0, 7, 8, 0, 8, 1 };
+
+        Vector2[] uv = new Vector2[] {
+        Vector2.zero,
+        new Vector2(-1, 0),
+        new Vector2(-cos45, cos45),
+        new Vector2(0, 1),
+        new Vector2(cos45, cos45),
+        new Vector2(1, 0),
+        new Vector2(cos45, -cos45),
+        new Vector2(0, -1),
+        new Vector2(-cos45, -cos45)};
+
+        mesh.vertices = vert;
+        mesh.triangles = tri;
+        mesh.uv = uv;
+
+        meshRenderer.material = material;
+        meshFilter.mesh = mesh;
+
+        return newCircle.transform;
+    }
+    */
